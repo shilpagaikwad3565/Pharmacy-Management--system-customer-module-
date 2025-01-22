@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- For Font Awesome icons -->
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        .profile {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            width: 300px;
+            height:500px;
+            
+            position: fixed; 
+           
+            right: 20px; 
+            background-color: #add8e6; 
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+      
+        .nav-item {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        
+        .nav-link i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+       
+        .nav-link:hover {
+            color: #007bff;
+            transform: translateX(5px);
+        }
+
+        .nav-item:hover {
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+       
+        .profile h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+       
+        .nav-link.logout {
+            color: red;
+        }
+
+        .nav-link.logout:hover {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile">
+        <h2>User Profile</h2>
+        <ul class="item">
+            <li class="nav-item">
+                <a class="nav-link" href="Homepage.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='manageaccount'><i class="fas fa-user"></i> User Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Homepage.html"><i class="fas fa-search"></i>Search Medicine</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mycart"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Homepage.html"><i class="fas fa-box-open"></i> View Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link logout" href="Logout.jsp"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
