@@ -1,5 +1,5 @@
 # Pharmacy-Management--system-customer-module-
-# Pharmacy Management System - Customer Module
+
 
 This project is a **Pharmacy Management System (Customer Module)** developed using **HTML, CSS, Core Java, Servlet, and JSP**. It allows users to browse products, add them to the cart, manage quantities, and search for specific products efficiently.
 
